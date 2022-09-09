@@ -12,7 +12,7 @@ const secretCard  = (card) => {
 console.log(secretCard('1234567890123456'));
 
 const censored = (txt,w) => {
-    let content = txt.replace(w , '*')
+    let content = txt.replace( w , '*'.repeat(w.length))
     return content
 }
 console.log(censored('سلام وقت بخیر جناب' , 'بخیر'));
